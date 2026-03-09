@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -5,25 +6,21 @@
 }
 
 body {
-    font-family: 'Glacial Indiffrence ', serif;
+      font-family: 'Glacial Indiffrence ', serif;
     margin: 0;
     color: white;
 
     background-image: url("background.png");
-    background-size: cover;
-    /* Agar penuh layar */
-    background-position: center;
-    /* Posisi tengah */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /* Tidak ikut scroll */
+    background-size: cover;        /* Agar penuh layar */
+    background-position: center;   /* Posisi tengah */
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  /* Tidak ikut scroll */
 }
 
 
 /* Navbar */
 header {
-    background-color: #1e5043;
-    /* Lebih gelap untuk kontras */
+    background-color: #1e5043; /* Lebih gelap untuk kontras */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,15 +49,13 @@ nav a:hover {
     align-items: center;
     justify-content: center;
 }
-
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background: rgba(0, 0, 0, 0.55);
-    /* Overlay gelap transparan */
+    background: rgba(0, 0, 0, 0.55); /* Overlay gelap transparan */
 }
 
 .hero {
@@ -83,7 +78,7 @@ nav a:hover {
     height: 380px;
     object-fit: cover;
     border-radius: 50% / 60%;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
 }
 
 .hero-text h1 {
@@ -97,17 +92,14 @@ nav a:hover {
     margin-bottom: 15px;
     color: #161e1e;
 }
-
 .hero-text {
 
     max-width: 600px;
 
     /* Glass effect */
-    background: rgba(255, 255, 255, 0.15);
-    /* Transparan */
+    background: rgba(255, 255, 255, 0.15); /* Transparan */
     backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    /* Support Safari */
+    -webkit-backdrop-filter: blur(15px); /* Support Safari */
 
     padding: 40px;
     border-radius: 20px;
@@ -115,8 +107,7 @@ nav a:hover {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 
-    color: white;
-    /* Teks tetap putih */
+    color: white; /* Teks tetap putih */
 }
 
 .hero-text h1 {
@@ -192,7 +183,7 @@ nav a:hover {
     height: 380px;
     object-fit: cover;
     border-radius: 50% / 60%;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
 /* Text */
@@ -227,7 +218,6 @@ button {
 button:hover {
     background-color: #17a2c2;
 }
-
 /* ===== GALLERY SECTION ===== */
 
 .gallery {
@@ -254,7 +244,7 @@ button:hover {
     width: 300px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -267,9 +257,8 @@ button:hover {
 
 .card:hover {
     transform: translateY(-15px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
-
 .gallery {
     min-height: 100vh;
     padding: 100px 50px;
@@ -280,7 +269,6 @@ button:hover {
     background-position: center;
     background-attachment: fixed;
 }
-
 .gallery::before {
     content: "";
     position: absolute;
@@ -298,7 +286,6 @@ button:hover {
     position: relative;
     z-index: 2;
 }
-
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -310,7 +297,7 @@ button:hover {
     width: 300px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     transition: transform 0.4s ease;
 }
 
@@ -325,229 +312,220 @@ button:hover {
 
 /* ===== MUSIC SECTION ===== */
 
-.music-section {
-    min-height: 80vh;
-    padding: 100px 50px;
-    text-align: center;
+.music-section{
+min-height:80vh;
+padding:100px 50px;
+text-align:center;
 
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+background-image:url("background.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 
-    position: relative;
+position:relative;
 }
 
 /* overlay gelap seperti section sebelumnya */
 
-.music-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.music-section::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
 
-    background: rgba(0, 0, 0, 0.65);
-    /* tingkat kegelapan */
-    z-index: 0;
+background:rgba(0,0,0,0.65); /* tingkat kegelapan */
+z-index:0;
 }
 
 /* supaya konten tetap di atas overlay */
 
 .music-section h2,
-.music-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.music-container{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:20px;
 }
 
-.music-section h2 {
-    font-size: 28px;
-    margin-bottom: 80px;
-    /* jarak lebih besar ke video */
-    margin-top: 0;
+.music-section h2{
+font-size:28px;
+margin-bottom:80px;   /* jarak lebih besar ke video */
+margin-top:0;
 }
-
-.music-section {
-    min-height: 80vh;
-    padding: 120px 50px 100px 50px;
+.music-section{
+min-height:80vh;
+padding:120px 50px 100px 50px; 
 }
-
 /* container */
 
-.music-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.music-container{
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
 /* video card */
 
-.music-card {
-    width: 500px;
+.music-card{
+width:500px;
 
-    background: rgba(239, 232, 232, 0.15);
-    backdrop-filter: blur(15px);
+background:rgba(239, 232, 232, 0.15);
+backdrop-filter:blur(15px);
 
-    padding: 20px;
-    padding-bottom: 0%;
-    border-radius: 15px;
+padding:20px;
+border-radius:15px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+border:1px solid rgba(255,255,255,0.3);
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-    transition: 0.4s;
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+transition:0.4s;
 }
 
-.music-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+.music-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 60px rgba(0,0,0,0.8);
 }
 
 /* video */
 
-.music-card iframe {
-    width: 100%;
-    height: 280px;
-    border: none;
-    border-radius: 10px;
+.music-card iframe{
+width:100%;
+height:280px;
+border:none;
+border-radius:10px;
 
-    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.6));
+filter: drop-shadow(0 8px 15px rgba(0,0,0,0.6));
 }
 
 /* ===== LINK SECTION ===== */
 
-.link-section {
-    min-height: 70vh;
-    padding: 100px 50px;
-    text-align: center;
+.link-section{
+min-height:70vh;
+padding:100px 50px;
+text-align:center;
 
-    background-image: url("background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+background-image:url("background.jpg");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
 
-    position: relative;
+position:relative;
 }
 
 
 
 /* overlay gelap */
 
-.link-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.65);
-    z-index: 0;
+.link-section::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+z-index:0;
 }
 
-.link-section h2 {
-    margin-bottom: 60px;
-    margin-left: 80px;
-    /* judul ikut geser */
-    text-align: left;
-    position: relative;
-    z-index: 1;
+.link-section h2{
+margin-bottom:60px;
+margin-left:80px; /* judul ikut geser */
+text-align:left;
+position:relative;
+z-index:1;
 }
 
-.link-container {
-    display: flex;
-    justify-content: flex-start;
-    /* pindah ke kiri */
-    align-items: center;
+.link-container{
+display:flex;
+justify-content:flex-start; /* pindah ke kiri */
+align-items:center;
 
-    margin-left: 80px;
-    /* jarak dari tepi kiri */
+margin-left:80px; /* jarak dari tepi kiri */
 
-    position: relative;
-    z-index: 1;
+position:relative;
+z-index:1;
 }
 
 /* card gambar */
 
-.link-card {
-    text-decoration: none;
-    color: white;
+.link-card{
+text-decoration:none;
+color:white;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
 
-    padding: 20px;
-    border-radius: 15px;
+padding:20px;
+border-radius:15px;
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
 
-    transition: 0.4s;
+transition:0.4s;
 }
 
-.link-card img {
-    width: 250px;
-    border-radius: 10px;
-    display: block;
-    margin-bottom: 15px;
+.link-card img{
+width:250px;
+border-radius:10px;
+display:block;
+margin-bottom:15px;
 }
 
-.link-card:hover {
-    transform: translateY(-8px) scale(1.03);
-    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+.link-card:hover{
+transform:translateY(-8px) scale(1.03);
+box-shadow:0 25px 60px rgba(0,0,0,0.8);
 }
-
 /* container layout */
 
-.link-container {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+.link-container{
+display:flex;
+align-items:center;
+gap:50px;
 
-    margin-left: 80px;
+margin-left:80px;
 
-    position: relative;
-    z-index: 1;
+position:relative;
+z-index:1;
 }
 
 /* card gambar */
 
-.link-card img {
-    width: 260px;
-    border-radius: 12px;
+.link-card img{
+width:260px;
+border-radius:12px;
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-    transition: 0.4s;
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+transition:0.4s;
 }
 
-.link-card img:hover {
-    transform: scale(1.05);
+.link-card img:hover{
+transform:scale(1.05);
 }
 
 /* deskripsi */
 
-.link-description {
-    max-width: 400px;
+.link-description{
+max-width:400px;
 
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
 
-    padding: 25px;
-    border-radius: 15px;
+padding:25px;
+border-radius:15px;
 
-    border: 1px solid rgba(255, 255, 255, 0.3);
+border:1px solid rgba(255,255,255,0.3);
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
 }
 
-.link-description h3 {
-    margin-bottom: 15px;
+.link-description h3{
+margin-bottom:15px;
 }
 
-.link-description p {
-    line-height: 1.7;
-    font-size: 14px;
+.link-description p{
+line-height:1.7;
+font-size:14px;
 }
 
 .allign-right {
