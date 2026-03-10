@@ -1,56 +1,52 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
+/* ===== BODY ===== */
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Glacial Indifference', serif;
     color: white;
-
-    background-image: url("background.png"); /* motif sama */
+    background-image: url("background.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    
+    /* FIX: Pushes content down to avoid navbar overlap */
+    padding-top: 80px; 
 }
 
-/* Navbar */
-/* Navbar Sama Seperti Home */
-/* Navbar */
-
-header{
-position:fixed;
-top:0;
-width:100%;
-z-index:1000;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:15px 50px;
-
-background:rgba(33, 103, 77, 0.9);
-backdrop-filter:blur(8px);
--webkit-backdrop-filter:blur(8px);
+/* ===== NAVBAR ===== */
+.header {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(33, 103, 77, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
-.logo{
-font-weight:700;
-color:white;
+.logo {
+    font-weight: 700;
+    color: white;
+    font-size: 24px;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:14px;
-transition:0.3s;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
-nav a:hover{
-color:#f9fffe;
+nav a:hover {
+    color: #f9fffe;
+    text-decoration: underline;
 }
 .about{
 margin-top:100px;
@@ -68,7 +64,7 @@ margin-top:100px;
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .about-content h1 {
@@ -86,7 +82,6 @@ margin-top:100px;
 .about-gallery {
     display: flex;
     justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -109,7 +104,7 @@ margin-top:100px;
     transform: scale(1.1);
 }
 .about {
-    margin-top: 80px;
+    margin-top: 90px;
 }
 .interest-box:hover{
     transform: translateY(-5px);
@@ -132,13 +127,13 @@ font-family: 'Libre Baskerville', serif;
 .interest-box{
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 60px;
 }
 
 .interest-box img{
-    width: 280px;
-    border-radius: 10px;
+    width: 250px;
+    border-radius: 190px;
 }
 
 .interest-text h3{
@@ -178,37 +173,45 @@ body {
 
 /* Navbar */
 header {
-    background-color: #1e5043; /* Lebih gelap untuk kontras */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
+    background: rgba(33, 103, 77, 0.9); /* Pick one color */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .logo {
     font-weight: 700;
+    color: white;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 25px;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #f9fffe;
 }
 
 /* Hero */
 .hero {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -711,3 +714,27 @@ font-size:14px;
     padding-top: 0%;
 }
 
+/* --- TRANSPARENT BLACK BOX --- */
+.transparent-box {
+    background: rgba(0, 0, 0, 0.6); /* ✅ Transparent black */
+    padding: 40px;
+    border-radius: 15px;
+    color: #F9F5F0;
+    max-width: 1900px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.transparent-box h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #DEBF8A;
+}
+
+.transparent-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
